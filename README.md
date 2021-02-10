@@ -37,4 +37,4 @@ Esta es la pantalla principal vista en una PC hecha por mí:
 
 En el siguiente link puedes ver la página funcionando: 
 
-https://romanpinelo.github.io/
+https://romanpinelo.github.io/profile-card-component-main/
