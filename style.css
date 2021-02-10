@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Phone*/
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 120% 170%, -25% -60%;
+  font-family: 'Kumbh Sans';
+  font-weight: bold;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.card {
+  background-color: #FFF;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 8.625rem;
+  width: 90vw;
+  height: 65vh;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.data {
+  height: 75%;
+  text-align: center;
+}
+
+.data img {
+  margin-top: 5rem;
+  border-radius: 50%;
+  border: 10px solid #FFF;
+}
+
+.name {
+  color: hsl(229, 23%, 23%);
+  margin-top: 1rem;
+}
+
+.name span {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.place {
+  font-weight: 400;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 59%);
+  font-size: 1rem;
+}
+
+.statistics {
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #00000033;
+}
+
+.statistics span {
+  display: block;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 0.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(227, 10%, 46%);
+  cursor: pointer;
+}
+
+.attribution a:hover {
+  color: #000;
+}
+
+
+
+/* Tablet*/
+@media screen and (min-width: 768px) {
+  body {
+    background-position: -30rem -30rem, 20rem 30rem;
+  }
+  
+  .card {
+    background-size: 100% 12.125rem;
+  }
+  
+  .card img {
+    width: 13rem;
+  }
+  
+  .name, .place {
+    margin-top: 2.5rem;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+  }
+  
+  .place {
+    font-size: 1.125rem;
+  }
+  
+  .statistics p {
+    font-size: 1.5rem;
+  }
+  
+  .statistics span {
+    font-size: 1rem;
+  }
+  
+  .attribution {
+    font-size: 2rem;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 1000px) {
+  body {
+    background-position: -20rem -30rem, 40rem 20rem;
+  }
+  
+  .card {
+    width: 25vw;
+    height: 60vh;;
+  }
+  
+  .card {
+    background-size: 100% 8.625rem;
+  }
+  
+  .card img {
+    width: 7rem;
+  }
+  
+  .name, .place {
+    margin-top: 1rem;
+  }
+  
+  .attribution {
+    font-size: 1.5rem;
+  }
+}
